@@ -1,0 +1,44 @@
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: thistle;
+}
+
+#buttonDiv {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#btn {
+     
+}
+
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    }
+
+.cells {
+   border: black 1px solid;
+   
+}
+
+.square {
+    display: grid;
+    height: 480px;
+    width: 480px;
+    border: darkslateblue solid 10px;
+    background-color: white;
+}
