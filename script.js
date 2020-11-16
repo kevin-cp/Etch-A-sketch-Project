@@ -4,15 +4,15 @@ actualGrid.classList.add('square');
 
 
 // sets the size of the grid
-let rows = 16;
-let columns = 16;
-actualGrid.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
-actualGrid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+let size = Number(prompt('Choose a grid size! Ex: 16 = 16x16 grid (Max 100)'));
+actualGrid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+actualGrid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 //
 
 //function that creates the grid
 function grid() {
-    for (let i = 0; i < rows * columns; i++) {
+    for (let i = 0; i <= size * size; i++) {
+        if (size <= 100) {
         const divs = document.createElement('div');
         divs.classList.add('cells');
         // func sor the hover
@@ -22,7 +22,8 @@ function grid() {
         }        
         //
         actualGrid.appendChild(divs)
-    }
+    } 
+} 
 };
 grid();
 //
@@ -30,7 +31,9 @@ grid();
 const reset = document.querySelector('#btn');
 reset.addEventListener('click', function(){
      window.location.reload();
-}); 
+    
+}
+); 
 //
  
 

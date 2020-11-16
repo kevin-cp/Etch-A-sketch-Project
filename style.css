@@ -20,7 +20,7 @@ body {
 
 h1 {
     text-align: center;
-    font-family: fantasy;
+    font-family: fantasy, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -37,8 +37,8 @@ h1 {
 
 .square {
     display: grid;
-    height: 480px;
-    width: 480px;
+    height: 960px;
+    width: 960px;
     border: darkslateblue solid 10px;
     background-color: white;
 }
